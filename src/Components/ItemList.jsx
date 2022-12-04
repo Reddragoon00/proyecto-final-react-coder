@@ -3,7 +3,7 @@ import Item from './Item'
 
 export default function ItemList({products}) {
   return (
-    <div>
+    <div className='cardContainer'>
         {products.map((product) =>(
             <Item key={product.id} product={product} />
         ))}

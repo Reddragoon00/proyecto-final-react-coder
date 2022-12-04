@@ -32,5 +32,5 @@ export default function ItemListContainer() {
     }, [CategoryID]);
   
   
-    return <ItemList products={products} />;
+    return <ItemList products={products} />
 }

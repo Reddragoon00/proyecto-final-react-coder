@@ -5,21 +5,20 @@ import { Link } from 'react-router-dom'
 export default function Item({product}) {
   return (
     <div>
-        <div className='col-md-2'>
+        <div className='d-flex p-2'>
             <Card>
-            <Card.Img variant = 'top' src = {product.img} alt = {product.name} style={{ width: '18rem' }}/>
-            <Card.Body>
-                <Card.Text>
-                    id: {product.id}<br/>
-                    name: {product.name}<br/>
-                    $ {product.price}<br/>
-                    Stock: {product.stock}
-                </Card.Text>
-                <div className="btn btn-dark">
-                    <Link to ={'/item/' +product.id}>Ir al Item</Link>
-                </div>
-            </Card.Body>
-
+            <Card.Img variant = 'top' src = {product.img} alt = {product.name} style={{ width: '18rem' }} />
+                <Card.Body>
+                    <Card.Text>
+                        id: {product.id}<br/>
+                        name: {product.name}<br/>
+                        $ {product.price}<br/>
+                        Stock: {product.stock}
+                    </Card.Text>
+                    <div className="btn btn-dark">
+                        <Link to ={'/item/' +product.id} style={{ textDecoration: 'none' }}>Go to Item</Link>
+                    </div>
+                </Card.Body>
             </Card>
         </div>
     </div>
