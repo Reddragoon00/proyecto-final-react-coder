@@ -1,6 +1,9 @@
 # Ecommerce-CelularesTodoBusca
 Ecommerce sim built with React JS and Firestore
 
+```
+Navigation video of the website can be found within the files
+```
 
 ## Description
 
